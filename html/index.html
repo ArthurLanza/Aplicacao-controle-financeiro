@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro Pessoal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle Financeiro Pessoal</h1>
+        
+        <div class="balance">
+            <h3>Saldo Atual:</h3>
+            <h2 id="balance">R$ 0.00</h2>
+        </div>
+
+        <div class="income-expense">
+            <div>
+                <h4>Receitas</h4>
+                <p id="income">R$ 0.00</p>
+            </div>
+            <div>
+                <h4>Despesas</h4>
+                <p id="expense">R$ 0.00</p>
+            </div>
+        </div>
+
+        <div class="transaction-form">
+            <h4>Adicionar Nova Transação</h4>
+            <p1>Campos obrigatórios*</p1>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Descrição*" required>
+                <input type="number" id="amount" placeholder="Valor (positivo ou negativo)*" required>
+                <button type="submit">Adicionar Transação</button>
+            </form>
+        </div>
+
+        <div class="history">
+            <h3>Histórico</h3>
+            <ul id="transaction-list"></ul>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
